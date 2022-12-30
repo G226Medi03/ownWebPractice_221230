@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+{% load static %}
+
+
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="./LogInCss.css">
+
+</head>
+
+<body class="_widget-auto-layout">
+  <img src="./KogMaw.png" class="MainPageImage" width="35px" height="35px"
+    alt="Error html line 7: ImageNotFound (sImageName= 'KogMaw.png'">
+
+  <h1 class="WelcomeBack_h1_Title">Welcome back</h1>
+
+  <form method="POST">
+
+    <div class="container">
+      <div class="input-box">
+        <input class="EmailInput" inputmode="email" spellcheck="false" autocapitalize="false" type="text"
+          autocomplete="off" tabindex="-1" aria-hidden="true" required="" autofocus>
+        <label class="EmailAddressLabel">Email address</label>
+
+      </div>
+    </div>
+
+    <div class="error-element-username-Div">
+    </div>
+
+    <div class="container">
+      <div class="input-box">
+        <input id="PasswordInput" type="password" class="PasswordInput" spellcheck="false" autocapitalize="false"
+          type="text" autocomplete="off" tabindex="-1" aria-hidden="true" required="" autofocus>
+        <label for="">Password</label>
+        <i class="uil uil-eye-slash toggle" id="Eye"></i>
+      </div>
+    </div>
+    <p class="ForgotPassword">
+      <a class="ForgotPassword" href="./ForgotPassword.html">Forgot password?</a>
+    </p>
+
+    <button type="submit" class="LogInButton">Continue</button>
+  </form>
+
+  <p class="SignUp">Don't have an account?
+    <a class="SignUpHref" href="/SignUp.html">Sign up
+    </a>
+  </p>
+
+  <div class="OrTextDiv">
+
+    <div class="OR_Line">OR</div>
+  </div>
+
+
+  <form method="post" data-provider="google" class="cf0a1d8ed c5004a5cd c22faf3d3">
+    <input type="hidden" name="state"
+      value="hKFo2SBGT29fWmxRWER5aEdCTjdVU2EyY25tdkpIVUtoSm53OKFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIE9jeFA2VHNhN1UwYzE1VG14Qjd5Z2pld0UxcDhjelI1o2NpZNkgRFJpdnNubTJNdTQyVDNLT3BxZHR3QjNOWXZpSFl6d0Q">
+
+    <input type="hidden" name="connection" value="google-oauth2">
+
+    <button type="submit" class="Continue_With_Google_Button" data-provider="google">
+
+      <span class="Continue_With_Google_Image" data-provider="google"></span>
+
+
+      <span class="cc341260d">Continue with Google</span>
+    </button>
+  </form>
+
+
+  <script src="./LogInScript.js"></script>
+</body>
+
+</html>

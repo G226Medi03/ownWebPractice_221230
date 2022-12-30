@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{%load static %}
+
+
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="./SignUpCss.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body class="_widget-auto-layout">
+  <img src="./KogMaw.png" class="MainPageImage" width="35px" height="35px"
+    alt="Error html line 7: ImageNotFound (sImageName= 'KogMaw.png'">
+
+  <h1 class="WelcomeBack_h1_Title">Create Your Account</h1>
+
+  <form method="POST">
+
+    <div class="container">
+      <div class="input-box">
+        <input class="EmailInput" inputmode="email" spellcheck="false" autocapitalize="false" type="text"
+          autocomplete="off" tabindex="-1" aria-hidden="true" required="" autofocus>
+        <label class="EmailAddressLabel">Email address</label>
+
+      </div>
+    </div>
+
+    <div class="error-element-username-Div">
+    </div>
+
+    <div class="container">
+      <div class="input-box">
+        <input class="PasswordInput" type="password" spellcheck="false" autocapitalize="false" autocomplete="off"
+          tabindex="-1" aria-hidden="true" required="" autofocus>
+        <label for="">Password</label>
+        <i class="uil uil-eye-slash toggle" id="Eye"></i>
+      </div>
+    </div>
+
+    <button type="submit" class="LogInButton">Continue</button>
+
+  </form>
+
+  <p class="SignUp">Already have an account?
+    <a class="SignUpHref" href="/login">Log in</a>
+  </p>
+
+  <script src="./SignUpScript.js"></script>
+</body>
+
+</html>

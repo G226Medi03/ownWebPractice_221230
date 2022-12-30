@@ -1,0 +1,187 @@
+:root {
+    font-family: ColfaxAI, -apple-system, BlinkMacSystemFont, Arial, Helvetica, sans-serif;
+}
+
+.MainPageImage {
+    display: block;
+    margin: 0px auto;
+    margin-top: 30px;
+}
+
+.OrTextDiv {
+    text-align: center;
+}
+
+._widget-auto-layout {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.WelcomeBack_h1_Title {
+    margin-top: 250px;
+    margin-bottom: 35px;
+    color: rgb(45, 51, 58);
+    text-align: center;
+    font-size: xx-large;
+}
+
+.ForgotPassword {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #10a37f;
+}
+
+.OR_Line {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.OR_Line::before,
+.OR_Line::after {
+    content: "";
+    flex-grow: 1;
+    background: rgba(0, 0, 0, 0.35);
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 0px 14px;
+}
+
+/* Google Font Import - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.container {
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    margin-top: 10px;
+
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.container .input-box {
+    position: relative;
+    height: 50px;
+}
+
+.input-box input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    padding: 0 35px 0 15px;
+    transition: all 0.2s linear;
+}
+
+/* Email Input border-color : 시작시 초록색 */
+input:is(:focus, :valid) {
+    border-color: #10a37f;
+}
+
+.input-box :is(label, i) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    transition: all 0.2s linear;
+}
+
+/*E-Mail or Password 칸 안에 있는거 */
+.input-box label {
+    left: 15px;
+    pointer-events: none;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/*E-Mail or Password 위로 가는거 */
+input:is(:focus, :valid)~label {
+    color: #10a37f;
+    top: 0;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #fff;
+}
+
+/* 눈 */
+.input-box i {
+    right: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+input:is( :focus, :valid)~i {
+    color: #10a37f;
+}
+
+
+
+.container .input_box {
+    position: relative;
+    height: 50px;
+}
+
+.input_box input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    padding: 0 35px 0 15px;
+    transition: all 0.2s linear;
+}
+
+.SignUp {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.SignUpHref {
+    color: #10a37f;
+    text-decoration: none;
+}
+
+
+.LogInButton {
+
+    width: 100%;
+    min-height: 52px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 0;
+    color: #ffffff;
+    background-color: #10a37f;
+    border-radius: 6px;
+    margin-top: 24px;
+}
+
+.Continue_With_Google_Button {
+    align-items: center;
+    color: black;
+    background-color: #ffffff;
+    border-color: rgb(194, 200, 208);
+    height: 52px;
+    width: 320px;
+}
+
+.Continue_With_Google_Image {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB2aWV3Qm94PScwIDAgNDggNDgnPjxkZWZzPjxwYXRoIGlkPSdhJyBkPSdNNDQuNSAyMEgyNHY4LjVoMTEuOEMzNC43IDMzLjkgMzAuMSAzNyAyNCAzN2MtNy4yIDAtMTMtNS44LTEzLTEzczUuOC0xMyAxMy0xM2MzLjEgMCA1LjkgMS4xIDguMSAyLjlsNi40LTYuNEMzNC42IDQuMSAyOS42IDIgMjQgMiAxMS44IDIgMiAxMS44IDIgMjRzOS44IDIyIDIyIDIyYzExIDAgMjEtOCAyMS0yMiAwLTEuMy0uMi0yLjctLjUtNHonLz48L2RlZnM+PGNsaXBQYXRoIGlkPSdiJz48dXNlIHhsaW5rOmhyZWY9JyNhJyBvdmVyZmxvdz0ndmlzaWJsZScvPjwvY2xpcFBhdGg+PHBhdGggY2xpcC1wYXRoPSd1cmwoI2IpJyBmaWxsPScjRkJCQzA1JyBkPSdNMCAzN1YxMWwxNyAxM3onLz48cGF0aCBjbGlwLXBhdGg9J3VybCgjYiknIGZpbGw9JyNFQTQzMzUnIGQ9J00wIDExbDE3IDEzIDctNi4xTDQ4IDE0VjBIMHonLz48cGF0aCBjbGlwLXBhdGg9J3VybCgjYiknIGZpbGw9JyMzNEE4NTMnIGQ9J00wIDM3bDMwLTIzIDcuOSAxTDQ4IDB2NDhIMHonLz48cGF0aCBjbGlwLXBhdGg9J3VybCgjYiknIGZpbGw9JyM0Mjg1RjQnIGQ9J000OCA0OEwxNyAyNGwtNC0zIDM1LTEweicvPjwvc3ZnPg==");
+}
